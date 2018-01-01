@@ -45,7 +45,7 @@
 (define *<= (%cp2 "<="))
 (define *>= (%cp2 ">="))
 
-(define (*displayln x) (string-append "echo "x))
+(define (*php-echo x) (string-append "echo "x))
 (define (*string? x) (string-append "is_string("x")"))
 (define (**string x)
   (string-append "\""(string-append* (map **string%char (string->list x)))"\""))
